@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Need A Lift</title>
+    <style>
+        #map{
+            height: 100%;
+        }
+        html, body{
+            height: 80%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <p>Click the button to get your coordinates.</p>
+    <div id='map'></div>
+    <!-- <p>Click the button to get your coordinates.</p>
     <button onclick='getLocation()'>Try It</button>
-    <p id='current-location'></p>
+    <p id='current-location'></p> -->
     <script src='script.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+    async defer></script>
 </body>
 </html>
